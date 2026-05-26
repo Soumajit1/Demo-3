@@ -6,11 +6,7 @@ public:
             digits[i] %= 10;
             if (digits[i] != 0) return digits;
         }
-        digits.insert(digits.begin(), 1);
-        return digits;
-    }
-};
-class Solution {
+        digits.insert(digitsclass Solution {
 public:
     vector<int> plusOne(vector<int>& digits) {
         for (int i = digits.size() - 1; i >= 0; --i) {
@@ -18,6 +14,10 @@ public:
             digits[i] %= 10;
             if (digits[i] != 0) return digits;
         }
+        digits.insert(digits.begin(), 1);
+        return digits;
+    }
+};
         digits.insert(digits.begin(), 1);
         return digits;
     }
